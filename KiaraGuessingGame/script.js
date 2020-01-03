@@ -1,8 +1,8 @@
-var randomNumber = Math.floor((Math.random() * 10) +1);
+var randomNumber = Math.floor(Math.random() * 5) + 1;
 var guessCount = 1;
 
 while (guess !== randomNumber) {
-  var guess = parseInt(prompt("Guess A Number Between 1 and 10"));
+  var guess = parseInt(prompt("Guess A Number Between 1 and 5"));
 
   if (guess == randomNumber) {
     var paragraph = document.getElementById("guessParagraph");
